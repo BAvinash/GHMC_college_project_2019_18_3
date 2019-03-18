@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/bg"
+                app:civ_border_color="#EEEEEE"
+                app:civ_border_width="4dp"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="10"
+                app:civ_shadow_color="#8BC34A"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/envelope"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+
+            <com.libizo.CustomEditText
+                android:id="@+id/signemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp"
+                android:text=""
+                android:textSize="20sp"
+                app:libIZO_setBorderColor="#d4d2d3"
+                app:libIZO_setBorderView="true"
+                app:libIZO_setCornerRadius="20dp"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/lock"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+
+            <com.libizo.CustomEditText
+                android:id="@+id/signpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp"
+                android:text=""
+                android:textSize="20sp"
+                app:libIZO_setBorderColor="#d4d2d3"
+                app:libIZO_setBorderView="true"
+                app:libIZO_setCornerRadius="20dp"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        <in.shadowfax.proswipebutton.ProSwipeButton
+            android:id="@+id/proswipebutton_main_error"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            app:arrow_color="#33FFFFFF"
+            app:bg_color="@android:color/background_dark"
+            app:btn_text="sign Up"
+            app:text_color="@android:color/white"
+            app:text_size="12sp" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

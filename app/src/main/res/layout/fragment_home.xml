@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+   <LinearLayout
+       android:id="@+id/first"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+
+       <HorizontalScrollView
+           android:id="@+id/firsthori"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="12dp"
+           android:scrollbars="none">
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:clipToPadding="false"
+               android:orientation="horizontal"
+               android:paddingLeft="10dp"
+               android:paddingRight="10dp">
+
+               <LinearLayout
+                   android:id="@+id/interrecord"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="10dp"
+                   android:orientation="vertical">
+
+                   <com.makeramen.roundedimageview.RoundedImageView
+
+                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                       android:id="@+id/postacomp"
+                       android:layout_width="150dp"
+                       android:layout_height="250dp"
+                       android:scaleType="centerCrop"
+                       android:src="@drawable/post"
+                       app:riv_corner_radius="3dip"
+                       app:riv_oval="false" />
+
+
+                   <TextView
+                       android:id="@+id/inter"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="3dp"
+                       android:text="Post a complaint"
+                       android:textColor="#585e66"
+                       android:textSize="15sp" />
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:orientation="horizontal"/>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_marginRight="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <com.makeramen.roundedimageview.RoundedImageView
+                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                       android:layout_width="150dp"
+                       android:layout_height="250dp"
+                       android:id="@+id/cheimage"
+                       android:scaleType="centerCrop"
+                       android:src="@drawable/event"
+                       app:riv_corner_radius="3dip"
+                       app:riv_oval="false" />
+
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="3dp"
+                       android:text="Create a event"
+                       android:textColor="#585e66"
+                       android:textSize="15sp" />
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:orientation="horizontal"/>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <com.makeramen.roundedimageview.RoundedImageView
+                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                       android:layout_width="150dp"
+                       android:layout_height="250dp"
+                       android:id="@+id/update"
+                       android:scaleType="centerCrop"
+                       android:src="@drawable/profile"
+                       app:riv_corner_radius="3dip"
+                       app:riv_oval="false" />
+
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="3dp"
+                       android:text="Update your profile"
+                       android:textColor="#585e66"
+                       android:textSize="15sp" />
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:orientation="horizontal"/>
+               </LinearLayout>
+
+           </LinearLayout>
+
+       </HorizontalScrollView>
+
+
+
+
+       <HorizontalScrollView
+           android:layout_below="@+id/firsthori"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:scrollbars="none">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="15dp"
+               android:clipToPadding="false"
+               android:orientation="horizontal"
+               android:paddingLeft="10dp"
+               android:paddingRight="10dp">
+
+
+               <LinearLayout
+                   android:layout_width="150dp"
+                   android:layout_height="100dp"
+                   android:layout_marginRight="10sp"
+                   android:background="@drawable/white_rect"
+                   android:orientation="vertical">
+
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:padding="4dp"
+                       android:text="Annapurna NearBy"
+                       android:textColor="@android:color/white"
+                       android:textSize="11sp" />
+
+
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+
+                       android:orientation="horizontal">
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:scaleType="fitCenter"
+                           android:src="@drawable/food" />
+
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_width="150dp"
+                   android:layout_height="100dp"
+                   android:layout_marginRight="10sp"
+                   android:background="@drawable/white_rect"
+                   android:orientation="vertical">
+
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:padding="4dp"
+                       android:text="Sports  NearBy"
+                       android:textColor="@android:color/white"
+                       android:textSize="11sp" />
+
+
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+
+                       android:orientation="horizontal">
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:scaleType="fitCenter"
+                           android:src="@drawable/medal" />
+
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="150dp"
+                   android:layout_height="100dp"
+                   android:layout_marginRight="10sp"
+                   android:background="@drawable/white_rect"
+                   android:orientation="vertical">
+
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:padding="4dp"
+                       android:text="Health Initiatives  NearBy"
+                       android:textColor="@android:color/white"
+                       android:textSize="11sp" />
+
+
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+
+                       android:orientation="horizontal">
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:scaleType="fitCenter"
+                           android:src="@drawable/care" />
+
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_width="150dp"
+                   android:layout_height="100dp"
+                   android:layout_marginRight="10sp"
+                   android:background="@drawable/white_rect"
+                   android:orientation="vertical">
+
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:padding="4dp"
+                       android:text=" Events NearBy"
+                       android:textColor="@android:color/white"
+                       android:textSize="11sp" />
+
+
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+
+                       android:orientation="horizontal">
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:scaleType="fitCenter"
+                           android:src="@drawable/eventtwo" />
+
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="150dp"
+                   android:layout_height="100dp"
+                   android:layout_marginRight="10sp"
+                   android:background="@drawable/white_rect"
+                   android:orientation="vertical">
+
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:padding="4dp"
+                       android:text="Public Toilets NearBy"
+                       android:textColor="@android:color/white"
+                       android:textSize="11sp" />
+
+
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+
+                       android:orientation="horizontal">
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:scaleType="fitCenter"
+                           android:src="@drawable/disabled" />
+
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+
+
+
+           </LinearLayout>
+
+       </HorizontalScrollView>
+
+
+
+
+
+
+   </LinearLayout>
+
+
+
+
+
+
+    <FrameLayout
+
+        android:layout_below="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@android:color/white">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img"
+                app:riv_corner_radius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/bg"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/shadow_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignBottom="@id/img"
+                android:src="@drawable/bottom_shadow" />
+
+            <ProgressBar
+                android:id="@+id/progress_load_photo"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp" />
+
+            <TextView
+                android:id="@+id/User"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignStart="@+id/title"
+                android:layout_alignLeft="@+id/title"
+                android:layout_alignTop="@+id/layoutata"
+                android:layout_alignEnd="@+id/layoutata"
+                android:layout_alignRight="@+id/layoutata"
+                android:layout_marginTop="-3dp"
+                android:layout_marginEnd="135dp"
+                android:layout_marginRight="135dp"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="User"
+                android:textColor="@android:color/white" />
+
+
+            <FrameLayout
+                android:id="@+id/layoutata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-44dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/white_rect"
+                android:padding="5dp">
+
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/food" />
+
+                <TextView
+                    android:id="@+id/publishedAt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginRight="10dp"
+                    android:text="01 march 2018"
+                    android:textColor="@android:color/white" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Title"
+                android:textColor="@android:color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:text="Desc" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_below="@+id/shadow_bottom"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="300dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/food"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
